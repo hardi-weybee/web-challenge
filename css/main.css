@@ -392,7 +392,7 @@ nav li a:hover {
     margin: .5em;
     cursor: pointer;
 }*/
-@media only screen and (min-width: 746px) {
+@media only screen and (min-width: 916px) {
   .mobile-menu, .mobile-exit {
     display: none;
   }
@@ -574,6 +574,54 @@ nav li a:hover {
   }
   .footer .footer-list li {
     list-style-type: none;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .header .header-one .number {
+    display: block;
+    background: rgb(238, 82, 39);
+    text-align: center;
+    width: auto;
+    margin-bottom: -2.3em;
+    border-bottom: 1px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .header .header-one .number a {
+    margin-top: 35px;
+  }
+
+  .header1 .box {
+    background: var(--color);
+    margin: 0px;
+  }
+  .header1 .box .logo {
+    display: grid;
+    font-size: 2em;
+  }
+  .header1 .box .logo sup {
+    display: flex;
+  }
+  .header1 .box .logo sub {
+    display: flex;
+  }
+
+  .container nav {
+    display: flex;
+    margin-top: 8em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container nav ul {
+    float: right;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .footer .first .first-detail {
+    float: left;
     margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
