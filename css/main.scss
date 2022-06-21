@@ -7,57 +7,33 @@ body {
 }
 
 .container {
-    margin: 0px 30px;
+   width: 90%;
+   margin: auto;
 }
 
 .header {
     background: gray;
-    width: 100%;
+    width: auto;
     height: auto;
 
-    /*nav {
-        display: none;
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
-
-    .mobile-menu {
-        cursor: pointer;
-        right: 0;
-    }*/
 }
-
 .header-one {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding-left: 8em;
 }
 
 .header-one a {
-    text-decoration: none;
-    padding: 0.5em;
-    display: block;
-    font-size: 1em;
-    text-align: right;
-    color: white;
-    text-transform: uppercase;
-    margin: auto;
+    visibility: hidden;
 }
 
 .number {
     display: none;
-    /*background: rgb(238, 82, 39);
-    text-align: center;
-    width: auto;
-    margin-bottom: -2.3em;
-    border-bottom: 1px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-
-    a {
-        margin-top: 35px;
-    }*/
 }
-
 
 .mobile-menu {
     cursor: pointer;
@@ -66,24 +42,18 @@ body {
     float: left;
 }
 
-
-
 .header1 {
     background: white;
 
     .container {
-        display: flow-root;
+        display: flex;
     }
 
     .box {
-        width: auto;
-        height: auto;
-        //background: rgb(107, 219, 219);
+        width: fit-content;
+        height: auto;     
         padding: 10px 0px;
-        //padding-top: 65px;
         right: 0;
-        /*border: 2px solid black;
-        border-radius: 20px;*/
         margin-top: 10px;
         float: right;
         
@@ -91,39 +61,18 @@ body {
             text-decoration: none;
             color: rgb(0, 0, 0);
             font-size: 1.5em;
-            text-align: right;
 
             span {
                 font-weight:bolder;
-                font-size: 1.6em;
-                
+                font-size: 1.6em;  
             }            
         }
     }
-
-    
 
     nav {
         display: none;
     }
 }
-
-/*.header-two {
-    display: flex;
-    list-style-type: none;
-    margin: -2em;
-    padding-left: 17em;
-}
-
-.header-two a {
-    text-decoration: none;
-    padding: 0.5em 1em;
-    display: block;
-    font-size: 1em;
-    text-align: right;
-    color: black;
-    text-transform: uppercase;
-}*/
 
 .hero {
     background: var(--color);
@@ -159,7 +108,8 @@ body {
         background-color: black;
         justify-content: center;
         display: flex;
-        flex-direction: column;     
+        flex-direction: column;
+        font-weight: bolder;     
 
         span {
             font-size: 2em;
@@ -172,10 +122,11 @@ body {
     background: rgb(228, 228, 228);
 
     .container {
-        background: linear-gradient(to right, darkgreen, rgb(84, 138, 84));
+        background: linear-gradient(to right, rgb(2, 70, 2), rgb(133, 212, 133));
     }
     
     .hero-text {
+        color: white;
         margin: 0px;
         padding: .5em 2em;
         font-size: larger;
@@ -197,60 +148,46 @@ body {
             margin: 0;
             cursor: pointer;
         }
-        
-        .left-features {
-            display: grid;
-
-            .left-features-detail {
-                display: none;
-            }
-
-            .left-features-img {
-                margin:auto;
-                margin-top: 1em;
-            }
             
-            .img {
-                width: 15em;
-                height: 10em;
+        .left-features {
+            display: flex;
+        
+            .left-features-detail {
+                display: block;
+                width: fit-content;
+        
+                .go-feature {
+                    display: flex;
+                    border: 2px solid black;
+                    border-radius: 8px;
+                    background: linear-gradient(to bottom, rgb(161, 161, 161),rgb(58, 58, 58));
+                    color: white;
+                    text-decoration: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    width:fit-content;
+                    height:20px;
+                
+                    p {
+                        margin: 0;
+                    }
+                    img {
+                        padding-left: 10px;
+                        width: 30px;   
+                    }
+                }
             }
+        }
+        
+        .left-features-img {
+            display: none;
         }
     }
 }
 
-/*.left-features-detail {
-    width: 50%;
-    font-size: large;
-    margin-bottom: 30px;
-}
-
-.go-feature {
-    border: 2px solid black;
-    border-radius: 8px;
-    background: rgb(91, 91, 91);
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-}
-
-*/
-
 .features-list {
     display: none;
 }
-
-/*figure {
-    margin: auto;
-    margin-left: 0;
-    margin-right: auto;
-    flex: auto;
-}
-
-figcaption {
-    padding-top: 5px;
-    text-transform: capitalize;
-    color: darkgreen;
-}*/
 
 .features-detail {
     display: grid;
@@ -277,7 +214,7 @@ figcaption {
         display: flex;
         border: 2px solid black;
         border-radius: 8px;
-        background: rgb(91, 91, 91);
+        background: linear-gradient(to bottom, rgb(161, 161, 161),rgb(58, 58, 58));
         color: white;
         text-decoration: none;
         padding: 8px;
@@ -287,6 +224,7 @@ figcaption {
 
         p {
             margin: 0;
+            font-size: small;
         }
         img {
             padding-left: 10px;
@@ -300,8 +238,9 @@ figcaption {
     background: rgb(228, 228, 228);
     
     .container {
-        margin: 0px 30px;
-        background: rgb(212, 212, 212);
+        width: 90%;
+        margin: auto;
+        background: linear-gradient(to bottom, rgb(231, 231, 231) , rgb(190, 190, 190));
         
         .cont1 {
             padding: 2em 2em;
@@ -309,6 +248,7 @@ figcaption {
             h2 {
                 font-size: larger;
                 margin: 0;
+                color: var(--color);
             }
 
             p {
@@ -320,49 +260,59 @@ figcaption {
 }
 
 .footer {
-    background: rgb(137, 137, 137);
+    background: rgb(56, 56, 56);
+    color: white;
     
     .first {
-        display: flex;
+        display: block;
         
         .first-detail {
             display: flex;
+            justify-content: space-around;
             list-style-type: none;
             text-transform: capitalize;
             margin-right: 1em;
             cursor: pointer;
+            padding: auto;
+            width: auto;
+
+
+            li {
+                margin: 0 auto;
+                width: 10%;
+                padding: 10px;
+            }
         }
 
         .first-img {
-            display: none;
+            display: flex;
+            width: fit-content;
+
+            li {   
+                margin: auto;
+                list-style-type: none;
+
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
         }
     }
 
     p {
         text-align: center;
         margin: 1em 0;
+        padding: 1em;
     }
 
     .footer-list {
-        display: none;
-        /*display: grid;
-        list-style-type: none;
-        margin: .5em .5em .5em 2em;
-        text-align: justify;*/      
+        display: none;    
     }
-
-
 }
 
-/*.first-img {
-    display: flex;
-    margin: auto;
-    list-style-type: none;
-    width: fit-content;
-}*/
-
 nav.menu-btn {
-    display: block;
+    display:block ;
 }
 
 nav {
@@ -389,12 +339,19 @@ nav {
             padding: .3em;
             font-size: 1.3em;
             text-align: left;
+            text-transform: capitalize;
             
             &:hover {
                 font-weight: bold;
             }
         }
     }
+
+
+    
+
+
+
 }
 
 .mobile-exit {
@@ -402,49 +359,6 @@ nav {
     margin: .5em;
     cursor: pointer;
 }
-/*
-
-.header1 nav.menu-btn {
-    display: block;
-}
-
-.header1 nav {
-    position: fixed;
-    z-index: 999;
-    width: 50%;
-    right: 0;
-    top: 0;
-    background: #394149;
-    height: 100vh;
-    padding: 1em;
-
-    ul.header-two {
-        margin-top: 2.7em;
-    }
-
-    li {   
-        list-style-type: none;
-
-        a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: .3em;
-            font-size: 1.3em;
-            text-align: right;
-
-            &:hover {
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-.mobile-exit {
-    float: right;
-    margin: .5em;
-    cursor: pointer;
-}*/
 
 
 @media only screen and(min-width: 916px) {
@@ -456,13 +370,32 @@ nav {
         display: flow-root;
     }
 
-    .header .header-one {
-        float: right;
+    .header {
+
+        .header-one {
+            float: right;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+        }
+    
+        .header-one a {
+            visibility: visible;
+            
+            text-decoration: none;
+            padding: 0.3em;
+            display: block;
+            font-size: 1.3em;
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
+            margin: auto;
+        }
+       
     }
 
     .header1 .container {
-        display: grid;
-        grid-template-columns: 25px auto;
+        display: flex;
     }
 
     .header1 .box {
@@ -471,8 +404,14 @@ nav {
         margin: 0px;
         height: max-content;
         margin-bottom: 1em;
+        padding: 1em;
+        background: linear-gradient(to bottom, rgb(87, 159, 87), rgb(1, 63, 1));
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
 
         .logo {
+            color: white;
             font-size: 2em;
 
             sup {
@@ -491,45 +430,44 @@ nav {
         }
     }
     
-    .container nav {
-        display: flex;
-        //grid-template-columns: auto;
-        justify-content: space-between;
-        background: none;
-        position: absolute;
-        height: auto;
-        width: auto;
-        //padding: auto;
-        margin-top: 4.5em;
-
-        ul {
-            display: flex;
-            //margin: 6.5em 1em 0em auto;
-            margin-top: 1em;
-            margin-left: -1em;
-            //padding: auto;
-            width:50%;
+    .container {
+        width: 90%;
+        margin: auto;
     
-        }
+        nav {
+            display: flex;
+            justify-content: start;
+            background: none;
+            position: absolute;
+            height: auto;
+            width: fit-content;
+            margin-top: 6em;
+            font-size: 15px;
 
-        /*li {
-            width: max-content;
-            margin: 0;
-            
-        }*/
+            ul {
+                display: flex;
+                margin-top: 1em;
+                margin-left: -1em;
+                width:50%;    
+                
 
-        a{
-            color: black;
-            font-size: 1em;
-            padding: auto;
-            //display: block;
-            text-align: right;
-            color: black;
-            text-transform: uppercase;
-            margin: auto;
+                .inner {
+                    display: none;
+                }
+            }
+
+            a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                font-size: 1em;
+                padding: auto;
+                text-align: right;
+                color: black;
+                text-transform: uppercase;
+                margin: auto;
+            }
         }
     }
-
 
     .hero {
         margin-top: 1.2em;
@@ -546,7 +484,7 @@ nav {
                 display: flex;
                 border: 2px solid black;
                 border-radius: 8px;
-                background: rgb(91, 91, 91);
+                background: linear-gradient(to bottom, rgb(161, 161, 161),rgb(58, 58, 58));
                 color: white;
                 text-decoration: none;
                 padding: 8px;
@@ -566,6 +504,7 @@ nav {
         }
 
         .left-features-img {
+            display: block;
             margin: auto;
             width: max-content;
 
@@ -680,22 +619,35 @@ nav {
 
             sub {
                 display: flex;
+                margin-right: 40px;
             }
         }
     }
 
+    .header1 nav {
+        display: block;
+
+        .header-one {
+            visibility: hidden;
+        }
+
+    }
+
     .container nav {
         display: flex;
-        //background: #394149;
-        margin-top: 8em;
+        margin-top: 9em;
         height: fit-content;
-        //width: 100%;
+        position: absolute;
 
         ul {
             float: right;
-            //right: 0;
             margin-left: auto;
             padding: 0;
+            right: 0;
+
+            li {
+                padding: auto;
+            }
         }
     }
 
@@ -703,6 +655,7 @@ nav {
         .first-detail {
             float: left;
             margin: auto;
+            padding-right: 7em;
         }
     }
 }

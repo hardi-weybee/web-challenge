@@ -10,17 +10,17 @@
 <body>
     <div class="header">
         <div class="container">
+            
             <img src="images/menu.svg" alt="menu" id="mobile-menu" class="mobile-menu">
-            <!--<nav>
-                <img src="images/exit.svg" alt="exit" id="mobile-exit" class="mobile-exit">-->
-                <ul class="header-one">
+            
+            <ul class="header-one">
                     <li><a href="#">about</a></li>
                     <li><a href="#">contact</a></li>
                     <li><a href="#">faqs</a></l>
-                    <li><a href="#">jobs</a></li>
+                    <li class="border"><a href="#">jobs</a></li>
                     <li class="number"><a href="#">(866)943-40</a></li>
                 </ul>
-            <!--</nav>--> 
+            
         </div>
     </div>
 
@@ -30,8 +30,6 @@
                 <a class="logo" href="#"><sup>TOTAL</sup> <span>SECURITY</span><sub>SOLUTIONS</sub> </a>
             </div>
 
-            <!--<img src="images/menu.svg" alt="menu" id="mobile-menu" class="mobile-menu">-->
-            
             <nav>
                 <img src="images/exit.svg" alt="exit" id="mobile-exit" class="mobile-exit">
                 <ul class="header-two">
@@ -42,6 +40,14 @@
                     <li><a href="#">blog</a></li>
                     <li><a href="#">freeResources</a></li>
                     <li><a href="#">architectSolutions</a></li>
+                    
+                    <div class="inner">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">faqs</a></l>
+                        <li class="border"><a href="#">jobs</a></li>
+                        <li class="number"><a href="#">(866)943-40</a></li>
+                    </div>        
                 </ul>
             </nav>     
         </div>
@@ -54,20 +60,16 @@
                     <div class="left-col">
                         <div class="side-content">total safety <span>demands</span> total security.</div>
                     </div> 
-                </div>
-                
-                <img src="images/1.jpg" class="hero-img" alt="security image">
-                
+                </div>              
+                <img src="images/1.jpg" class="hero-img" alt="security image">               
             </div>
-            <!--<img src="images/4.png" class="hero-img1" alt="security image">-->
-            
         </div>
     </section>
 
     <section class="hero1">
         <div class="container">
             <p class="hero-text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
-            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+            It has roots in a piece of classical,<br/> Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
         </div>
     </section>
             
@@ -188,12 +190,12 @@
                 </ul>
     
                 <ul class="first-img">
+                    <li><img src="images/facebook.png" alt=""></li>
+                    <li><img src="images/google.png" alt=""></li>
                     <li><img src="images/5.png" alt=""></li>
-                    <li><img src="images/5.png" alt=""></li>
-                    <li><img src="images/5.png" alt=""></li>
-                    <li><img src="images/5.png" alt=""></li>
-                    <li><img src="images/5.png" alt=""></li>
-                    <li><img src="images/5.png" alt=""></li>
+                    <li><img src="images/mail.png" alt=""></li>
+                    <li><img src="images/pinterest.png" alt=""></li>
+                    <li><img src="images/smartphone.png" alt=""></li>
                     <li><img src="images/5.png" alt=""></li>
                 </ul>
             </div>
@@ -226,10 +228,6 @@
         mobileBtnExit.addEventListener('click', () => {
             nav.classList.remove('menu-btn');
         })
-
-        /*const mobileBtn1 = document.getElementById('mobile-menu1')
-        const nav1 = document.querySelector('nav')
-        const mobileBtnExit1 = document.getElementById('mobile-exit1');*/
     </script>
 </body>
 </html>
